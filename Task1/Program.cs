@@ -8,7 +8,7 @@ namespace Task1
 {
     public class Solution
     {
-        public int ClimbStairs(int n)
+        public static int ClimbStairs(int n)
         {
             if (n <= 2)
             {
@@ -29,6 +29,11 @@ namespace Task1
                 array[i] = array[i - 1] + array[i - 2];
             }
             return array.Max();
+        }
+        static void Main(string[] args)
+        {
+           int n = 5;
+            Console.WriteLine(ClimbStairs(n));
         }
     }
 }
